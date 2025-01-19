@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bookmark">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Elfeshawy">
+  <title>Bookmark</title>
+  <link rel="icon" href="images/bookmark (1).png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="container text-center py-5">
+
+      <div class="  mx-auto">
+        <h1 class="position-relative mx-auto ">Bookmarker</h1>
+      </div>
+      <!-- take data  -->
+      <div class="line mx-auto mt-5 pt-3">
+
+        <div class="favSite">
+          <h2>
+            <span class="one">
+              <i class="fa-solid fa-bookmark "></i>
+              Bookmark your</span>
+            <span class="two">favorite sites
+
+              <i class="fa-solid fa-bookmark "></i>
+            </span>
+          </h2>
+        </div>
+
+        <div class="content mx-auto my-5">
+
+          <div class="mb-3 text-start my-5">
+            <label for="formGroupExampleInput" class="form-label fw-bolder fs-5"><span><i
+                  class="fa-solid fa-book-bookmark pe-2"></i></span> Site Name</label>
+            <input oninput="regex(this)" type="text" class="form-control p-2 is-invalid" id="formGroupExampleInput"
+              placeholder="Bookmark Name">
+          </div>
+          <div class="mb-3 text-start ">
+            <label for="formGroupExampleInput2" class="form-label fw-bolder fs-5"><span><i
+                  class="fa-solid fa-link pe-2"></i></span> Site URL</label>
+            <input oninput="regex(this)" type=" text" class="form-control p-2 is-invalid" id="formGroupExampleInput2"
+              placeholder="Website URL  ">
+          </div>
+          <button id="submitting" class="btn disabled is-invalid fs-4 px-5 py-1 mt-3 text-white">submit</button>
+
+        </div>
+
+      </div>
+
+      <table class="my-5 mx-auto  " id="innerCartona">
+
+      </table>
+
+    </div>
+
+  </header>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html
